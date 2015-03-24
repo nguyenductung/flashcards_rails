@@ -1,0 +1,19 @@
+<% content_for :jumbotron do %>
+  <div class="jumbotron">
+    <div class="container">
+      <h1><%= @flash_card.word %></h1>
+      <p class="pronunciation"><%= @flash_card.pronunciation %></p>
+      <p class="meaning"><%= @flash_card.meaning %></p>
+    </div>
+  </div>
+<% end %>
+<div class="row">
+  <div class="container">
+    <div class="box-title">
+      <h2>
+        <a>Other flash cards</a>
+      </h2>
+    </div>
+  </div>
+  <%= render partial: 'flash_cards', locals: {flash_cards: @flash_cards} %>
+</div>

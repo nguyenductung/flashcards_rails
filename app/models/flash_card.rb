@@ -1,4 +1,6 @@
 class FlashCard < ActiveRecord::Base
+  LANGUAGES = ["English", "Japanese"]
+
   class << self
     def by_language(language)
       case language.to_s.downcase

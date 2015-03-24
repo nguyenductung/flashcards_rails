@@ -1311,10 +1311,10 @@ footer .footer-right img {
   background-position: center !important;
 }
 footer .footer-right .icon-top img {
-  background: url(../img/icon-top.png);
+  background: image-url("icon-top.png");
 }
 footer .footer-right a.icon-top:hover img {
-  background: url(../img/icon-top-hover.png) no-repeat center !important;
+  background: image-url("icon-top-hover.png") no-repeat center !important;
 }
 /**
  * Search autocomplete
